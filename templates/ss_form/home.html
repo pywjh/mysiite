@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    这是view传过来的：{{ username }}<br>
+    这是中间件自定义的：{{ request.myuser }}<br>
+    这是上下文处理器的：{{ myuser }}<br>
+    <a href="{% url 'ss_login_t' %}">登陆</a> <br>
+    <a href="{% url 'ss_logout_t' %}">退出</a>
+<br>
+<a href="{% url 'blog_index' %}">进入博客主页</a>
+</body>
+</html>
